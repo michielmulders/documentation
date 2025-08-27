@@ -25,15 +25,6 @@ export const RandomCatButton = () => {
     }
   }
 
-  const copyId = async () => {
-    if (!catId) return
-    try {
-      await navigator.clipboard.writeText(catId)
-    } catch {
-      // no-op: clipboard might be unavailable in some contexts
-    }
-  }
-
   return (
     <div className="not-prose p-4 border rounded-xl dark:border-zinc-950/80">
       <div className="flex items-center gap-3">
@@ -53,7 +44,6 @@ export const RandomCatButton = () => {
               ID: <strong>{catId}</strong>
             </span>
             <button
-              onClick={copyId}
               className="px-2 py-1 rounded border text-xs hover:shadow-sm dark:border-white/20"
               title="Copy ID to clipboard"
             >
