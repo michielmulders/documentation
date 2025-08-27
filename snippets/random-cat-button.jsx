@@ -1,5 +1,3 @@
-import { useState } from "react"
-
 export const RandomCatButton = () => {
   const [catId, setCatId] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
