@@ -1,4 +1,5 @@
 export const RandomCatButton = () => {
+  console.log('this works')
   const [catId, setCatId] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
