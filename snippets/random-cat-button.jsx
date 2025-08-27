@@ -8,7 +8,6 @@ export const RandomCatButton = () => {
     setError(null)
     setCatId(null)
 
-    
     try {
       const res = await fetch("https://api.thecatapi.com/v1/images/search", {
         headers: { accept: "application/json" },
@@ -43,12 +42,6 @@ export const RandomCatButton = () => {
             <span className="text-zinc-950/80 dark:text-white/80">
               ID: <strong>{catId}</strong>
             </span>
-            <button
-              className="px-2 py-1 rounded border text-xs hover:shadow-sm dark:border-white/20"
-              title="Copy ID to clipboard"
-            >
-              Copy
-            </button>
           </div>
         )}
       </div>
