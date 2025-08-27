@@ -1,8 +1,7 @@
 export const RandomCatButton = () => {
-  console.log('this works')
-  const [catId, setCatId] = useState<string | null>(null)
+  const [catId, setCatId] = useState(null)
   const [loading, setLoading] = useState(false)
-  const [error, setError] = useState<string | null>(null)
+  const [error, setError] = useState(null)
 
   const fetchCat = async () => {
     setLoading(true)
