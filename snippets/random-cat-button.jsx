@@ -10,6 +10,7 @@ export const RandomCatButton = () => {
     setError(null)
     setCatId(null)
 
+    
     try {
       const res = await fetch("https://api.thecatapi.com/v1/images/search", {
         headers: { accept: "application/json" },
